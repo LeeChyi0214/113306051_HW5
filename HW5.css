@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 330px 540px;
+  width: 900px;
+  height: 1150px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+.left-panel {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.image{
+  object-fit: contain
+}
+
+.photo-panel {
+  background-image: url('2023-12-05-上午12.54.41.png');
+  background-size: cover;
+  background-position: center;
+  height: 50%;
+}
+
+.text-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.text-content h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.nccu-icon {
+  width: 50px;
+  align-self: flex-end;
+}
+
+.right-panel {
+  background-color: lightgray;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-panel h2 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.education ul, .homework-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.year {
+  font-weight: bold;
+}
+
+.favorite-music .albums {
+  display: flex;
+  justify-content: space-between;
+}
+
+.favorite-music .albums img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.favorite-music img:hover {
+  transform: scale(1.05);
+}
+
